@@ -11,6 +11,7 @@ s.dependency 'MJRefresh'
 s.requires_arc     = true
 s.ios.deployment_target = '8.0'
 s.public_header_files = 'YCCategory/YCCategory.h'
+s.source_files = 'YCCategory/Source/YCCategory.h'
 #s.default_subspec = 'Source'
 
 s.subspec 'UIImage' do |img|
