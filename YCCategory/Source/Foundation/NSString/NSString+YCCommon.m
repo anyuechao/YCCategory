@@ -226,7 +226,7 @@ static char firstLetterArray[HANZI_COUNT] =
 "whxgzxwznnqzjzjjqjccchykxbzszcnjtllcqxynjnckycynccqnxyewyczdcjycchyjlbtzyycqwlpgpyllgktltlgkgqbgychj"
 "xy";
 
-char pinyinFirstLetter(unsigned short hanzi)
+char ycPinyinFirstLetter(unsigned short hanzi)
 {
     int index = hanzi - HANZI_START;
     if (index >= 0 && index <= HANZI_COUNT)
@@ -274,7 +274,7 @@ char pinyinFirstLetter(unsigned short hanzi)
     unichar ch = [self characterAtIndex:0];
     char firstPinYin = ch;
     if (ch < 'A' || ch > 'z' || (ch > 'Z' && ch < 'a') ) {
-        firstPinYin = pinyinFirstLetter(ch);
+        firstPinYin = ycPinyinFirstLetter(ch);
     }
 
     return [NSString stringWithFormat:@"%c",firstPinYin];

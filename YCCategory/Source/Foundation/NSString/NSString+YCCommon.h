@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-char pinyinFirstLetter(unsigned short hanzi);
+char ycPinyinFirstLetter(unsigned short hanzi);
 
 @interface NSString(YCCommon)
 
